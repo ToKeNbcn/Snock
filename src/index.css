@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F2F6FF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
+}
+
+@font-face {
+  font-family: "Soho Gothic Pro"; 
+  src: url("//db.onlinewebfonts.com/t/1b6fc211ac8965244816cc37de9fbe77.eot"); 
+  src: url("//db.onlinewebfonts.com/t/1b6fc211ac8965244816cc37de9fbe77.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1b6fc211ac8965244816cc37de9fbe77.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1b6fc211ac8965244816cc37de9fbe77.woff") format("woff"), url("//db.onlinewebfonts.com/t/1b6fc211ac8965244816cc37de9fbe77.ttf") format("truetype"),url("//db.onlinewebfonts.com/t/1b6fc211ac8965244816cc37de9fbe77.svg#Soho Gothic Pro") format("svg"); 
+}
+
+.App {
+  padding: 40px 40px 40px 0px;
+  display: flex;
 }
