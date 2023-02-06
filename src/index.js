@@ -167,25 +167,30 @@ function App() {
           <hr></hr>
         </div>
       )}
-      <table>
-        <tr>
-          <th>SKU</th>
-          <th>Size</th>
-          <th>Quantity</th>
-          <th>Sell price</th>
-        </tr>
-        {Object.entries(store.getState()).map( ([sku, value]) => 
-          {Object.entries(value).map( ([size, value2]) => (
-            <tr>
-              <td>{sku}</td>
-              <td>{size}</td>
-              <td>{value2.quantity}</td>
-              <td>{value2.sell_price}</td>
-            </tr>
+      <Table>
+        <thead>
+          <tr>
+            <th>SKU</th>
+            <th>Size</th>
+            <th>Quantity</th>
+            <th>Sell price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.entries(store.getState()).map( ([sku, value]) => (
+            Object.entries(value).map( ([size, value2]) => (
+              <tr>
+                <td>{sku}</td>
+                <td>{size}</td>
+                <td>{value2.quantity}</td>
+                <td>{value2.sell_price}</td>
+              </tr>
+              )
             )
+          )
           )}
-        )}
-      </table>
+        </tbody>
+      </Table>
       </div>
     </div>
   );
